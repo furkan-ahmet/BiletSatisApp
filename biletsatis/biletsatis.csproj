@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03BA4FB6-716F-4FCD-B026-356BF184D9B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>biletsatis</RootNamespace>
+    <AssemblyName>biletsatis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\furka\OneDrive\Masaüstü\biletsatisapp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9E563C7D94732BE0C54A93D27220C97A20E0778F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>biletsatis_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alanlarList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alanlarList.Designer.cs">
+      <DependentUpon>alanlarList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alan_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alan_ADD.Designer.cs">
+      <DependentUpon>alan_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletDurum.Designer.cs">
+      <DependentUpon>biletDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletlerimList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletlerimList.Designer.cs">
+      <DependentUpon>biletlerimList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletler_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletler_ADD.Designer.cs">
+      <DependentUpon>biletler_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biletSatinAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletSatinAl.Designer.cs">
+      <DependentUpon>biletSatinAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilet_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilet_List.Designer.cs">
+      <DependentUpon>bilet_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iadeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iadeler.Designer.cs">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitol.Designer.cs">
+      <DependentUpon>kayitol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="konumlarList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="konumlarList.Designer.cs">
+      <DependentUpon>konumlarList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="konum_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="konum_ADD.Designer.cs">
+      <DependentUpon>konum_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciEdit.Designer.cs">
+      <DependentUpon>kullaniciEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicilar.Designer.cs">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sehirlerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehirlerList.Designer.cs">
+      <DependentUpon>sehirlerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sehir_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sehir_ADD.Designer.cs">
+      <DependentUpon>sehir_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparisDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisDetay.Designer.cs">
+      <DependentUpon>siparisDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisler.Designer.cs">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="turlerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="turlerList.Designer.cs">
+      <DependentUpon>turlerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tur_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tur_ADD.Designer.cs">
+      <DependentUpon>tur_ADD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alanlarList.resx">
+      <DependentUpon>alanlarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alan_ADD.resx">
+      <DependentUpon>alan_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletDurum.resx">
+      <DependentUpon>biletDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletlerimList.resx">
+      <DependentUpon>biletlerimList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletler_ADD.resx">
+      <DependentUpon>biletler_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biletSatinAl.resx">
+      <DependentUpon>biletSatinAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilet_List.resx">
+      <DependentUpon>bilet_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iadeler.resx">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitol.resx">
+      <DependentUpon>kayitol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="konumlarList.resx">
+      <DependentUpon>konumlarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="konum_ADD.resx">
+      <DependentUpon>konum_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciEdit.resx">
+      <DependentUpon>kullaniciEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicilar.resx">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sehirlerList.resx">
+      <DependentUpon>sehirlerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sehir_ADD.resx">
+      <DependentUpon>sehir_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparisDetay.resx">
+      <DependentUpon>siparisDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparisler.resx">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="turlerList.resx">
+      <DependentUpon>turlerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tur_ADD.resx">
+      <DependentUpon>tur_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="biletsatis_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\delete_btn.png" />
+    <Content Include="icons\edit_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
